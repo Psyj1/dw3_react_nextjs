@@ -4,6 +4,8 @@ import Welcome from "@/components/Welcome";
 import User from "@/components/User";
 import Description from "@/components/Description";
 import Pet from "@/components/Pet";
+import Counter from "@/components/counter.js";
+import Userform from "@/components/Userform";
 
 export default function Home() {
   return (
@@ -22,6 +24,11 @@ export default function Home() {
         {/* Componente fcom desestruturação de props */}
         <Description city="Registro" age={18} email="paulo@email.com" />
         <Pet name="Rex" breed="Dinossaur" age={3}/>
+        {/* Importando o contador(utilizando estados) */}
+        <br />
+        <Counter />
+        <br />
+        <Userform />
       </main>
     </>
   );
