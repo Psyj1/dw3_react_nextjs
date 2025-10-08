@@ -6,6 +6,9 @@ import Description from "@/components/Description";
 import Pet from "@/components/Pet";
 import Counter from "@/components/counter.js";
 import Userform from "@/components/Userform";
+import DaddyComponent from "@/components/DaddyComponent";
+import Children from "@/components/Children";
+import TaskList from "@/components/TaskList";
 
 export default function Home() {
   return (
@@ -29,6 +32,38 @@ export default function Home() {
         <Counter />
         <br />
         <Userform />
+        <br />
+        <br />
+        <DaddyComponent/>
+        <br />
+        <br />
+        <Children>
+          <div>
+            <p>Este é o conteúdo da children</p>
+          </div>
+        </Children>
+        <br />
+        <br />
+        <TaskList 
+        tasks ={[
+          {
+            id: "1",
+            text: "Pagar contas"
+          },
+          {
+            id: "2",
+            text: "Fazer compras no mercado"
+          },
+          {
+            id: "3",
+            text: "Lavar o carro"
+          },
+          {
+            id: "4",
+            text: "Estudar React"
+          },
+        ]}
+        />
       </main>
     </>
   );
